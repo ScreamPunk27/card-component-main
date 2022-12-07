@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --SoftBlue:hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+    --CyanO:hsla(178,100%,50%,0.3);
+    --MainBG:hsl(217, 54%, 11%);
+    --MainCard:hsl(216, 50%, 16%);
+    --Line:hsl(215, 32%, 27%);
+}
+
+body{
+    background-color: var(--MainBG);
+}
+
+main{
+    background-color: var(--MainCard);
+    font-family: 'outfit', sans-serif;
+}
+
+h1{
+    font-weight: 600;
+}
+
+.main-header{
+    position: relative;
+    cursor: pointer;
+}
+
+.main-header:hover .eye-icon{
+    visibility: visible;
+}
+
+.eye-icon{
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:var(--CyanO);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.main-body{
+    border-color: var(--Line);
+}
+
+.p-number{
+    color: var(--Cyan);
+}
+
+
+.p-footer,.p-clock,.p-text{
+    color: var(--SoftBlue);
+}
+
+.p-jules:hover, h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
